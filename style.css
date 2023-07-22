@@ -1,0 +1,115 @@
+:root{
+    --preto-fundo: #0F0D13;
+    --roxo: #2A2141;
+    --cinza-primario: #E1E1E6;
+    --cinza-secundario: #C4C4CC;
+    --cinza-terciario:#D9D9D9;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: var(--preto-fundo);
+}
+
+.home{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 28px;
+    background-color: var(--roxo);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-nome-album{
+    display: flex;
+    align-items: center;
+}
+
+.container-album{
+    width: 150px;
+}
+
+.img{
+    padding: 0 20px 28px 0;
+}
+
+.nomes-Banda{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0 0 28px 0;
+}
+
+.nomes-Banda h3{
+    color: var(--cinza-primario);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nomes-Banda p{
+    color: var(--cinza-primario);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 19px;
+    opacity: 0.5;
+}
+
+.players{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.buttons{
+    width: 28px;
+    padding: 0 0 28px 0;
+}
+
+.tempo-passado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span{
+    margin: 10px 0 0 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    opacity: 0.5;
+    font-family: var(--fonte-principal);
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 750px){
+    .container-nome-album{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-album{
+        width: 189px;    
+    }
+    
+}
